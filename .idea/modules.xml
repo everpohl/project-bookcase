@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/project-bookcase.client.iml" filepath="$PROJECT_DIR$/.idea/modules/project-bookcase.client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/project-bookcase.main.iml" filepath="$PROJECT_DIR$/.idea/modules/project-bookcase.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/project-bookcase.test.iml" filepath="$PROJECT_DIR$/.idea/modules/project-bookcase.test.iml" />
+    </modules>
+  </component>
+</project>
