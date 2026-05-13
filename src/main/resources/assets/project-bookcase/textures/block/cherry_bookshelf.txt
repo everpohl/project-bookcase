@@ -1,1 +1,32 @@
-TODO: replace with texture
+Texture: cherry_bookshelf.png
+Size:    16×16 px
+
+The side (book-spine) face of the cherry bookshelf. Rows 0–1 and 14–15 are cherry
+plank strips; rows 2–13 are book spines shared across all wood variants.
+
+--- HOW TO CREATE ---
+
+1. Open vanilla bookshelf.png (minecraft:block/bookshelf) as your starting point.
+   Extract it from the Minecraft jar — see TEXTURES.md for the unzip command.
+
+2. Recolor ONLY these rows — replace the oak plank tones with cherry plank tones:
+     Row  0  (top strip, lighter tone)
+     Row  1  (top strip, dark grain line)
+     Row 14  (bottom strip, mid tone)
+     Row 15  (bottom strip, lighter tone)
+
+3. Leave rows 2–13 (book spines) unchanged.
+
+4. Reference palette — minecraft:block/cherry_planks (from 26.1.2.jar)
+     #E7C2BB  light plank tone  (most common)
+     #E7BAB4  light-mid tone
+     #E6B3AD  mid tone
+     #E7CAC5  highlight
+     #E1A8A1  mid-dark tone
+     #DD9D97  dark grain
+     #CD8580  darkest grain
+
+5. Visual character: pale pastel pink — unmistakably distinct from all other wood
+   types. The plank strips are soft and rosy, giving the shelf a delicate appearance.
+
+When done, delete this file and commit cherry_bookshelf.png in its place.

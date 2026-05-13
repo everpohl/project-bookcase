@@ -1,1 +1,32 @@
-TODO: replace with texture
+Texture: jungle_bookshelf.png
+Size:    16×16 px
+
+The side (book-spine) face of the jungle bookshelf. Rows 0–1 and 14–15 are jungle
+plank strips; rows 2–13 are book spines shared across all wood variants.
+
+--- HOW TO CREATE ---
+
+1. Open vanilla bookshelf.png (minecraft:block/bookshelf) as your starting point.
+   Extract it from the Minecraft jar — see TEXTURES.md for the unzip command.
+
+2. Recolor ONLY these rows — replace the oak plank tones with jungle plank tones:
+     Row  0  (top strip, lighter tone)
+     Row  1  (top strip, dark grain line)
+     Row 14  (bottom strip, mid tone)
+     Row 15  (bottom strip, lighter tone)
+
+3. Leave rows 2–13 (book spines) unchanged.
+
+4. Reference palette — minecraft:block/jungle_planks (from 26.1.2.jar)
+     #B88764  light plank tone  (most common)
+     #AA7954  light-mid tone
+     #9F714A  mid tone
+     #BF8E6B  highlight
+     #976A44  mid-dark tone
+     #785437  dark grain
+     #68462F  darkest grain
+
+5. Visual character: warm medium brown with a richer, slightly orange-golden hue
+   compared to oak. Similar brightness but more saturated and earthy.
+
+When done, delete this file and commit jungle_bookshelf.png in its place.

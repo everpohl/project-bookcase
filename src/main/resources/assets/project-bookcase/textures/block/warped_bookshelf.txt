@@ -1,1 +1,33 @@
-TODO: replace with texture
+Texture: warped_bookshelf.png
+Size:    16×16 px
+
+The side (book-spine) face of the warped bookshelf. Rows 0–1 and 14–15 are warped
+plank strips; rows 2–13 are book spines shared across all wood variants.
+
+--- HOW TO CREATE ---
+
+1. Open vanilla bookshelf.png (minecraft:block/bookshelf) as your starting point.
+   Extract it from the Minecraft jar — see TEXTURES.md for the unzip command.
+
+2. Recolor ONLY these rows — replace the oak plank tones with warped plank tones:
+     Row  0  (top strip, lighter tone)
+     Row  1  (top strip, dark grain line)
+     Row 14  (bottom strip, mid tone)
+     Row 15  (bottom strip, lighter tone)
+
+3. Leave rows 2–13 (book spines) unchanged.
+
+4. Reference palette — minecraft:block/warped_planks (from 26.1.2.jar)
+     #398382  light plank tone  (most common)
+     #287067  light-mid tone
+     #2E5F51  mid tone
+     #3A8E8C  highlight
+     #1F5752  mid-dark tone
+     #1E4340  dark grain
+     #113835  darkest grain
+
+5. Visual character: muted teal/blue-green from the Nether — the only cool-toned wood
+   in the game. The strips will be clearly non-wooden in feel, reading as alien or
+   otherworldly.
+
+When done, delete this file and commit warped_bookshelf.png in its place.

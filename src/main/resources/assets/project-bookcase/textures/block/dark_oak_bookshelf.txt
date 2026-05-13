@@ -1,1 +1,33 @@
-TODO: replace with texture
+Texture: dark_oak_bookshelf.png
+Size:    16×16 px
+
+The side (book-spine) face of the dark oak bookshelf. Rows 0–1 and 14–15 are dark
+oak plank strips; rows 2–13 are book spines shared across all wood variants.
+
+--- HOW TO CREATE ---
+
+1. Open vanilla bookshelf.png (minecraft:block/bookshelf) as your starting point.
+   Extract it from the Minecraft jar — see TEXTURES.md for the unzip command.
+
+2. Recolor ONLY these rows — replace the oak plank tones with dark oak plank tones:
+     Row  0  (top strip, lighter tone)
+     Row  1  (top strip, dark grain line)
+     Row 14  (bottom strip, mid tone)
+     Row 15  (bottom strip, lighter tone)
+
+3. Leave rows 2–13 (book spines) unchanged.
+
+4. Reference palette — minecraft:block/dark_oak_planks (from 26.1.2.jar)
+     #4F3218  light plank tone  (most common)
+     #492F17  light-mid tone
+     #3E2912  mid tone
+     #53381A  highlight
+     #3A2411  mid-dark tone
+     #301E0E  dark grain
+     #291A0C  darkest grain
+
+5. Visual character: very dark brown, nearly black-brown — the darkest overworld wood.
+   The plank strips will be almost black at the edges, contrasting sharply with the
+   colorful book spines.
+
+When done, delete this file and commit dark_oak_bookshelf.png in its place.

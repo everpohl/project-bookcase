@@ -1,1 +1,32 @@
-TODO: replace with texture
+Texture: mangrove_bookshelf.png
+Size:    16×16 px
+
+The side (book-spine) face of the mangrove bookshelf. Rows 0–1 and 14–15 are mangrove
+plank strips; rows 2–13 are book spines shared across all wood variants.
+
+--- HOW TO CREATE ---
+
+1. Open vanilla bookshelf.png (minecraft:block/bookshelf) as your starting point.
+   Extract it from the Minecraft jar — see TEXTURES.md for the unzip command.
+
+2. Recolor ONLY these rows — replace the oak plank tones with mangrove plank tones:
+     Row  0  (top strip, lighter tone)
+     Row  1  (top strip, dark grain line)
+     Row 14  (bottom strip, mid tone)
+     Row 15  (bottom strip, lighter tone)
+
+3. Leave rows 2–13 (book spines) unchanged.
+
+4. Reference palette — minecraft:block/mangrove_planks (from 26.1.2.jar)
+     #7F4234  light plank tone  (most common)
+     #773934  light-mid tone
+     #753136  mid tone
+     #8B4D3A  highlight
+     #6F2A2D  mid-dark tone
+     #642423  dark grain
+     #5D1C1E  darkest grain
+
+5. Visual character: deep reddish-brown with a distinct crimson tint — darker and
+   redder than jungle, noticeably different from the standard earth-tone woods.
+
+When done, delete this file and commit mangrove_bookshelf.png in its place.

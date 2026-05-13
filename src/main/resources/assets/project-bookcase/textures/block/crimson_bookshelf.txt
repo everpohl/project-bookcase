@@ -1,1 +1,32 @@
-TODO: replace with texture
+Texture: crimson_bookshelf.png
+Size:    16×16 px
+
+The side (book-spine) face of the crimson bookshelf. Rows 0–1 and 14–15 are crimson
+plank strips; rows 2–13 are book spines shared across all wood variants.
+
+--- HOW TO CREATE ---
+
+1. Open vanilla bookshelf.png (minecraft:block/bookshelf) as your starting point.
+   Extract it from the Minecraft jar — see TEXTURES.md for the unzip command.
+
+2. Recolor ONLY these rows — replace the oak plank tones with crimson plank tones:
+     Row  0  (top strip, lighter tone)
+     Row  1  (top strip, dark grain line)
+     Row 14  (bottom strip, mid tone)
+     Row 15  (bottom strip, lighter tone)
+
+3. Leave rows 2–13 (book spines) unchanged.
+
+4. Reference palette — minecraft:block/crimson_planks (from 26.1.2.jar)
+     #7E3A56  light plank tone  (most common)
+     #6A344B  light-mid tone
+     #5C3042  mid tone
+     #863E5A  highlight
+     #4B2737  mid-dark tone
+     #442131  dark grain
+     #3F1E2D  darkest grain
+
+5. Visual character: deep purple-crimson from the Nether. Unlike any overworld wood —
+   the strips will be dark and purplish-red, reading as clearly supernatural.
+
+When done, delete this file and commit crimson_bookshelf.png in its place.

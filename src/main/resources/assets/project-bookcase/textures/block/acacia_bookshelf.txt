@@ -1,1 +1,32 @@
-TODO: replace with texture
+Texture: acacia_bookshelf.png
+Size:    16×16 px
+
+The side (book-spine) face of the acacia bookshelf. Rows 0–1 and 14–15 are acacia
+plank strips; rows 2–13 are book spines shared across all wood variants.
+
+--- HOW TO CREATE ---
+
+1. Open vanilla bookshelf.png (minecraft:block/bookshelf) as your starting point.
+   Extract it from the Minecraft jar — see TEXTURES.md for the unzip command.
+
+2. Recolor ONLY these rows — replace the oak plank tones with acacia plank tones:
+     Row  0  (top strip, lighter tone)
+     Row  1  (top strip, dark grain line)
+     Row 14  (bottom strip, mid tone)
+     Row 15  (bottom strip, lighter tone)
+
+3. Leave rows 2–13 (book spines) unchanged.
+
+4. Reference palette — minecraft:block/acacia_planks (from 26.1.2.jar)
+     #BA6337  light plank tone  (most common)
+     #AD5D32  light-mid tone
+     #A05630  mid tone
+     #C26D3F  highlight
+     #99502B  mid-dark tone
+     #8F4C2A  dark grain
+     #884728  darkest grain
+
+5. Visual character: distinctive orange-red — the most saturated of all wood types.
+   The plank strips will stand out strongly against the book spines.
+
+When done, delete this file and commit acacia_bookshelf.png in its place.

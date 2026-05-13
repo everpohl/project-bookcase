@@ -1,1 +1,32 @@
-TODO: replace with texture
+Texture: pale_oak_bookshelf.png
+Size:    16×16 px
+
+The side (book-spine) face of the pale oak bookshelf. Rows 0–1 and 14–15 are pale
+oak plank strips; rows 2–13 are book spines shared across all wood variants.
+
+--- HOW TO CREATE ---
+
+1. Open vanilla bookshelf.png (minecraft:block/bookshelf) as your starting point.
+   Extract it from the Minecraft jar — see TEXTURES.md for the unzip command.
+
+2. Recolor ONLY these rows — replace the oak plank tones with pale oak plank tones:
+     Row  0  (top strip, lighter tone)
+     Row  1  (top strip, dark grain line)
+     Row 14  (bottom strip, mid tone)
+     Row 15  (bottom strip, lighter tone)
+
+3. Leave rows 2–13 (book spines) unchanged.
+
+4. Reference palette — minecraft:block/pale_oak_planks (from 26.1.2.jar)
+     #FAEFEE  light plank tone  (most common)
+     #E7E3E1  light-mid tone
+     #DDCECD  mid tone
+     #FFFBF8  highlight (near white)
+     #D2C6C7  mid-dark tone
+     #C7B8B8  dark grain
+     #C0B2B2  darkest grain
+
+5. Visual character: nearly white with faint warm-gray undertones — the palest wood
+   in the game. The plank strips will be almost white, making the book spines pop.
+
+When done, delete this file and commit pale_oak_bookshelf.png in its place.

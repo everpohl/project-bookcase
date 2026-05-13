@@ -85,30 +85,30 @@ Java classes follow the same pattern:
 
 ## Textures
 
-### Vanilla texture filenames (from `26.1.2.jar`)
+### Approach
 
-**Regular bookshelf:**
-- `bookshelf.png` — the book-spine face (sides); top/bottom reuse `oak_planks.png` from vanilla
+Block models reference vanilla textures directly via the `minecraft:` namespace. The only
+custom texture per wood type is the **book-spine face** of the regular bookshelf — 12 files total.
 
-**Chiseled bookshelf:**
-- `chiseled_bookshelf_empty.png` — front face, all slots empty
-- `chiseled_bookshelf_occupied.png` — front face, slots occupied (state-dependent)
-- `chiseled_bookshelf_side.png` — side faces (shows wood grain)
-- `chiseled_bookshelf_top.png` — top/bottom faces (shows planks)
+| Face | Source |
+|------|--------|
+| Regular bookshelf sides | `project-bookcase:block/<wood>_bookshelf` (custom PNG) |
+| Regular bookshelf top/bottom | `minecraft:block/<wood>_planks` (vanilla) |
+| Chiseled bookshelf sides | `minecraft:block/<wood>_planks` (vanilla) |
+| Chiseled bookshelf top/bottom | `minecraft:block/<wood>_planks` (vanilla) |
+| Chiseled bookshelf front (empty) | `minecraft:block/chiseled_bookshelf_empty` (vanilla) |
+| Chiseled bookshelf front (occupied) | `minecraft:block/chiseled_bookshelf_occupied` (vanilla) |
 
-### Naming pattern for this mod
+### Files to create
 
-Prefix vanilla filenames with `<wood_type>_`. Examples:
-- `spruce_bookshelf.png`
-- `spruce_chiseled_bookshelf_empty.png`
-- `spruce_chiseled_bookshelf_side.png`
+One PNG per wood type, 12 total:
 
-### Shared vs. unique textures
+```
+src/main/resources/assets/project-bookcase/textures/block/<wood>_bookshelf.png
+```
 
-- **`<wood>_bookshelf.png`** — unique per wood type (book-spine face; plank top/bottom can reference vanilla's `<wood>_planks.png`)
-- **`<wood>_chiseled_bookshelf_empty.png`** — the slot pattern is wood-agnostic visually, but a per-wood file is provided for flexibility
-- **`<wood>_chiseled_bookshelf_occupied.png`** — same as above
-- **`<wood>_chiseled_bookshelf_side.png`** — unique per wood type (wood grain differs)
-- **`<wood>_chiseled_bookshelf_top.png`** — unique per wood type (planks pattern differs)
+Base each on vanilla's `bookshelf.png` — only the plank strips at the top and bottom
+edges need recoloring to match the wood type. Use `<wood>_planks.png` from the jar as
+color reference.
 
-Placeholder `.txt` files exist under `src/main/resources/assets/project-bookcase/textures/block/` for all 12 wood types × 5 textures = 60 files. Replace each `.txt` with the real `.png` when the texture is ready.
+Placeholder `.txt` files exist for all 12. Replace each with the real `.png` when ready.

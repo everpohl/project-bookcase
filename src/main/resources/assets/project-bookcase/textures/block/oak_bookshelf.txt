@@ -1,1 +1,33 @@
-TODO: replace with texture
+Texture: oak_bookshelf.png
+Size:    16×16 px
+
+The side (book-spine) face of the oak bookshelf. Rows 0–1 and 14–15 are oak plank
+strips; rows 2–13 are book spines shared across all wood variants.
+
+NOTE: The vanilla bookshelf IS oak. This file exists only so all variants reference
+project-bookcase:block/<wood>_bookshelf consistently. Your result should look
+essentially identical to minecraft:block/bookshelf.
+
+--- HOW TO CREATE ---
+
+1. Open vanilla bookshelf.png (minecraft:block/bookshelf) as your starting point.
+   Extract it from the Minecraft jar — see TEXTURES.md for the unzip command.
+
+2. The plank strips (rows 0–1 and 14–15) already use oak colors. You may copy the
+   vanilla texture directly; adjust only if you want to match oak_planks.png exactly.
+
+3. Leave rows 2–13 (book spines) unchanged.
+
+4. Reference palette — minecraft:block/oak_planks (from 26.1.2.jar)
+     #B8945F  light plank tone  (most common)
+     #AF8F55  light-mid tone
+     #9F844D  mid tone
+     #C29D62  highlight
+     #967441  mid-dark tone
+     #7E6237  dark grain
+     #67502C  darkest grain
+
+5. Visual character: warm honey-tan, medium brightness. The standard "wood" brown
+   the vanilla bookshelf already expresses.
+
+When done, delete this file and commit oak_bookshelf.png in its place.
