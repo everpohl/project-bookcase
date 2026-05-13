@@ -80,3 +80,35 @@ Java classes follow the same pattern:
 - No cross-mod compat is implemented here — that belongs in project-bookcase-compat
 - Data generation is the source of truth for recipes and loot tables; do not hand-write
   those JSON files
+
+---
+
+## Textures
+
+### Vanilla texture filenames (from `26.1.2.jar`)
+
+**Regular bookshelf:**
+- `bookshelf.png` — the book-spine face (sides); top/bottom reuse `oak_planks.png` from vanilla
+
+**Chiseled bookshelf:**
+- `chiseled_bookshelf_empty.png` — front face, all slots empty
+- `chiseled_bookshelf_occupied.png` — front face, slots occupied (state-dependent)
+- `chiseled_bookshelf_side.png` — side faces (shows wood grain)
+- `chiseled_bookshelf_top.png` — top/bottom faces (shows planks)
+
+### Naming pattern for this mod
+
+Prefix vanilla filenames with `<wood_type>_`. Examples:
+- `spruce_bookshelf.png`
+- `spruce_chiseled_bookshelf_empty.png`
+- `spruce_chiseled_bookshelf_side.png`
+
+### Shared vs. unique textures
+
+- **`<wood>_bookshelf.png`** — unique per wood type (book-spine face; plank top/bottom can reference vanilla's `<wood>_planks.png`)
+- **`<wood>_chiseled_bookshelf_empty.png`** — the slot pattern is wood-agnostic visually, but a per-wood file is provided for flexibility
+- **`<wood>_chiseled_bookshelf_occupied.png`** — same as above
+- **`<wood>_chiseled_bookshelf_side.png`** — unique per wood type (wood grain differs)
+- **`<wood>_chiseled_bookshelf_top.png`** — unique per wood type (planks pattern differs)
+
+Placeholder `.txt` files exist under `src/main/resources/assets/project-bookcase/textures/block/` for all 12 wood types × 5 textures = 60 files. Replace each `.txt` with the real `.png` when the texture is ready.
